@@ -12,6 +12,11 @@ import "./app.css";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  // {
+  //   rel: "preconnect",
+  //   href: "https://dev.bucketlab.io/",
+  //   crossOrigin: "use-credentials"
+  // },
   {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
@@ -39,11 +44,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </body>
     </html>
   );
-}
+};
 
 export default function App() {
   return <Outlet />;
-}
+};
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
@@ -59,7 +64,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
     stack = error.stack;
-  }
+  };
 
   return (
     <main className="pt-16 p-4 container mx-auto">
@@ -72,4 +77,4 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       )}
     </main>
   );
-}
+};
