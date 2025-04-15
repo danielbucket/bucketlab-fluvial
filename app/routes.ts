@@ -8,7 +8,7 @@ export default [
     route('/contact', './routes/bucketlab/contact/index.tsx'),
     route('/projects', './routes/bucketlab/projects/index.tsx'),
   ]),
-  route('/bucketlab', './routes/homelab/index.tsx', [
+  route('/homelab', './routes/homelab/index.tsx', [
     index('./routes/homelab/cubicle/index.tsx'),
   ]),
   route('/auth', './routes/auth/index.tsx', [
