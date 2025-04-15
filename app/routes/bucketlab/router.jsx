@@ -2,13 +2,13 @@ import { createBrowserRouter } from "react-router";
 
 import Home from './home';
 import About from './about';
-import Contact from './Contact';
+import Contact from './contact';
 import Projects from './projects';
 
 import Login from '../auth/login';
 import NotFound from './NotFound';
 
-import Root from './root';
+import Root from '.';
 
 export default createBrowserRouter([
   {
@@ -44,5 +44,8 @@ export default createBrowserRouter([
   },
   {
     path: '/auth',
+    children: [
+
+    ]
   }
 ]);
