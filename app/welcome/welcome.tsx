@@ -12,5 +12,5 @@ export function Welcome({ message }: { message: string }) {
         </nav>
       </div>
     </main>
-  );
+  )
 };

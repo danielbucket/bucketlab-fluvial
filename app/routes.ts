@@ -10,6 +10,7 @@ export default [
   ]),
   route('/homelab', './routes/homelab/index.tsx', [
     index('./routes/homelab/cubicle/index.tsx'),
+    route('profile', './routes/homelab/profile/index.tsx'),
   ]),
   route('/auth', './routes/auth/index.tsx', [
     index('./routes/auth/login/index.tsx'),
